@@ -18,7 +18,7 @@ column1 = dbc.Col(
             max=5000, 
             step=250, 
             value=None, 
-            marks={n: str(n) for n in range(-5000,5000,1000)}, 
+            marks={n: str(n) for n in range(-5000,6000,1000)}, 
             className='mb-5', 
         ),
         dcc.Markdown('#### First Dragon'), 

@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, predictions, insights, process, predictions1
+from pages import index, predictions, insights, dataandprocess, predictions1
 
 """
 https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
@@ -32,7 +32,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dcc.Link('Pro Team Predictions', href='/predictions', className='nav-link')),
         dbc.NavItem(dcc.Link('Should You Surrender', href='/predictions1', className='nav-link')),
         dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
+        dbc.NavItem(dcc.Link('Data and Process', href='/dataandprocess', className='nav-link')), 
     ],
     sticky='top',
     color='light', 
@@ -80,8 +80,8 @@ def display_page(pathname):
         return predictions1.layout
     elif pathname == '/insights':
         return insights.layout
-    elif pathname == '/process':
-        return process.layout
+    elif pathname == '/dataandprocess':
+        return dataandprocess.layout
     else:
         return dcc.Markdown('## Page not found')
 

@@ -29,25 +29,52 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Value Proposition
-
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
-
-            ✅ TESTING RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
+            ## What is LoL?
+            
+            League of Legends is a online multiplayer [MOBA](https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena) game. There is 
+            two teams with five players in each team. Each player is assign a special role and have to work cooperatively to destroy the 
+            enemy nexus.
+            
+            
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        
+        dcc.Markdown(
+            """
+        
+            ## Make Gold for Victory
+            
+            Want to find out if your favorite professional team is going to win at the 15 minute mark? 
+            
+            
+            """
+        ),
+        dcc.Link(dbc.Button('Pro Team Prediction', color='primary'), href='/predictions'),
+        
+        dcc.Markdown(
+            """
+        
+            ## Focus on Objectives for Victory
+            
+            Find out if your chances of winning is low and surrender after the 15 minute mark unanimously.  
+            
+            
+            """
+        ),
+        dcc.Link(dbc.Button('Surrender', color='primary'), href='/predictions'),
     ],
     md=4,
 )
 
 column2 = dbc.Col(
     [
-        html.Img(src='assets/Summoners_rift_map.jpeg', className='img-fluid')
-    ]
+        html.H2('Summoner Rift Map', className='text-center'),
+        html.Img(src='assets/Summoners_rift_map.jpeg', className='img-fluid'),
+        html.Img(src='assets/mapkill.png', className='img-fluid'),
+    ],
+    md=8,
+        
+    
 )
 
 layout = dbc.Row([column1, column2])
