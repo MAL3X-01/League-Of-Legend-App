@@ -51,7 +51,7 @@ column1 = dbc.Col(
         ),
         dcc.Link(dbc.Button('Pro Team Prediction', color='primary'), href='/predictions'),
         
-        dcc.Markdown(
+       dcc.Markdown(
             """
         
             ## Focus on Objectives for Victory
@@ -62,6 +62,15 @@ column1 = dbc.Col(
             """
         ),
         dcc.Link(dbc.Button('Surrender', color='primary'), href='/predictions'),
+        
+        dcc.Markdown(
+            """
+            ## Random Fact
+            The plot to the right is a scatterplot with every kill locations from the dataset. All the empty spots are structures. 
+            
+            
+            """
+        ),
     ],
     md=4,
 )

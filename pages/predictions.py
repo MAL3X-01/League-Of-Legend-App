@@ -7,11 +7,15 @@ from joblib import load
 pipe2 = load('assets/pipe2.joblib')
 
 from app import app
+CHANGE_COLOR = {'color': 'black',}
+
 
 column1 = dbc.Col(
     [
-        dcc.Markdown('## How likely your favorite team is going to win', className='mb-5'), 
-        dcc.Markdown('## Gold Difference @ 15 Minutes, Blue Advantage=+'), 
+        dcc.Markdown('### Gold Difference'),
+        dcc.Markdown('### @ 15 Minutes'),
+        dcc.Markdown('### Blue Advantage+'),
+        dcc.Markdown('### Red Advantage-'),
         dcc.Slider(
             id='min_15', 
             min=-5000, 
@@ -28,8 +32,9 @@ column1 = dbc.Col(
                 {'label': 'Blue', 'value': 0}, 
                 {'label': 'Red', 'value': 1},  
             ], 
-            value = None, 
+            value = None,   
             className='mb-5', 
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Tower'), 
         dcc.Dropdown(
@@ -39,7 +44,8 @@ column1 = dbc.Col(
                 {'label': 'Red', 'value': 1},  
             ], 
             value = None, 
-            className='mb-5', 
+            className='mb-5',
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Herald'), 
         dcc.Dropdown(
@@ -51,6 +57,7 @@ column1 = dbc.Col(
             ], 
             value = None, 
             className='mb-5', 
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Blood'), 
         dcc.Dropdown(
@@ -60,7 +67,8 @@ column1 = dbc.Col(
                 {'label': 'Red', 'value': 1},  
             ], 
             value = None, 
-            className='mb-5', 
+            className='mb-5',
+            style=CHANGE_COLOR,
         ),
     ],
     md=4,

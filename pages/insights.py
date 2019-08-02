@@ -11,8 +11,8 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Insights
-            
+            # Insights
+            ### First Model
             For my first model the permutation table shows important features for the model prediction. Gold difference at minute 
             15 is the most important feature to determine the winning team. It makes sense for it to be the most weighted feature. Gold 
             allows a team to buy items in the game to make their champion stronger to fight. Gold is obtain by killing monsters and enemy 
@@ -25,6 +25,15 @@ column1 = dbc.Col(
             
             
             The partial dependence plot is showing the effect of the model when gold difference range from 0-10,000 gold.
+            
+            ### Second Model
+            For my surrender model the gold difference feature is taken out. Replaced it with a different feature called 'First_Baron'. It's 
+            a monster objective where it appears on the map at 20 min mark. Both teams want to obtain this objective because it gives the 
+            whole team a powerful buff. On the second permutation table on the right you can see that first to kill Baron is weighted heavy 
+            for the predictive model. Usually it's very hard to kill Baron because it's very strong and both teams are actively stopping 
+            each other from killing it. Most likely the team that kills Baron first will have a gold lead and are just snowballing to 
+            victory. When the team gets the buff they have so much pushing power to destroy structures and eventually destroying the enemy 
+            nexus.  
 
             """
         ),

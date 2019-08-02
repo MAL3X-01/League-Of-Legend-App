@@ -7,6 +7,8 @@ from joblib import load
 pipe3 = load('assets/pipe3.joblib')
 
 from app import app
+CHANGE_COLOR = {'color': 'black',}
+
 
 column1 = dbc.Col(
     [
@@ -18,7 +20,8 @@ column1 = dbc.Col(
                 {'label': 'Red', 'value': 1},  
             ], 
             value = None, 
-            className='mb-5', 
+            className='mb-5',
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Dragon'), 
         dcc.Dropdown(
@@ -28,7 +31,8 @@ column1 = dbc.Col(
                 {'label': 'Red', 'value': 1},  
             ], 
             value = None, 
-            className='mb-5', 
+            className='mb-5',
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Tower'), 
         dcc.Dropdown(
@@ -38,7 +42,8 @@ column1 = dbc.Col(
                 {'label': 'Red', 'value': 1},  
             ], 
             value = None, 
-            className='mb-5', 
+            className='mb-5',
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Herald'), 
         dcc.Dropdown(
@@ -50,6 +55,7 @@ column1 = dbc.Col(
             ], 
             value = None, 
             className='mb-5', 
+            style=CHANGE_COLOR,
         ),
         dcc.Markdown('#### First Baron'), 
         dcc.Dropdown(
@@ -61,6 +67,7 @@ column1 = dbc.Col(
             ], 
             value = None, 
             className='mb-5', 
+            style=CHANGE_COLOR,
         ),
     ],
     md=4,

@@ -47,6 +47,9 @@ external_stylesheets = [
     dbc.themes.DARKLY,
     'https://use.fontawesome.com/releases/v5.9.0/css/all.css', # for social media icons
 ]
+meta_tags=[
+    {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.config.suppress_callback_exceptions = True

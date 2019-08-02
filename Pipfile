@@ -19,6 +19,7 @@ eli5 = "*"
 matplotlib = "*"
 pdpbox = "*"
 seaborn = "*"
+clorama = "*"
 
 [requires]
 python_version = "3.7"
