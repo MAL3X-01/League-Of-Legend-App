@@ -19,7 +19,6 @@ eli5 = "*"
 matplotlib = "*"
 pdpbox = "*"
 seaborn = "*"
-clorama = "*"
 joblib = "*"
 
 [requires]
