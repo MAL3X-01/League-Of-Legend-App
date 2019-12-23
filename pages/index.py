@@ -31,8 +31,8 @@ column1 = dbc.Col(
         
             ## What is LoL?
             
-            League of Legends is a online multiplayer [MOBA](https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena) game. There is 
-            two teams with five players in each team. Each player is assign a special role and have to work cooperatively to destroy the 
+            League of Legends is an online multiplayer [MOBA](https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena) game. There is 
+            two teams with five players in each team. Each player is assigned a special role and have to work cooperatively to destroy the 
             enemy nexus.
             
             
