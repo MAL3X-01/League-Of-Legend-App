@@ -18,16 +18,15 @@ column1 = dbc.Col(
             The data was obtain from [kaggle](https://www.kaggle.com/chuckephron/leagueoflegends#LeagueofLegends.csv). 
             
             
-            My objective was to predict profesional team winning probabilty at the 15 minute mark. It is determine by the gold difference and 
+            My objective was to predict profesional team winning probabilty at the 15 minute mark. It's determine by the gold difference and 
             first to obtain objectives. This model has a 70% accuracy score because 15 minute is still early in the game. The surrender 
             model can be used by anyone to determine if they are going to win or lose based on first to obtain objectives. The surrender 
             model has a 80% accuracy score.
             
             
-            There was many csv file I had to reformat so I can merge all the csv into one dataframe. I wanted to figure out what team obtain 
-            the objectives first and feature engineer to make new columns. Dropped many features that wouldn't be useful to my objective for 
+            I had to merge all the CSVs into one dataframe and feature engineer to make new columns. Dropped many features that wouldn't be useful to my objective for 
             this predicitve model. Randomsearchcv helped me pick the right parameters for my xgbclassifier model. Then I used permuation 
-            importance to get rid of features that have no effect to my predictive model. 
+            importance to get rid of features that had no effect to my predictive model. 
             
             
             
